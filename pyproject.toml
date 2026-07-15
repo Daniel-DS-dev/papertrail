@@ -1,0 +1,23 @@
+[project]
+name = "papertrail"
+version = "0.1.0"
+description = "Turn photographed documents into a queryable knowledge base — OCR → structured extraction → RAG Q&amp;A, with a measured eval harness"
+authors = [{name = "Daniel Popoola", email = "danielpopoola95@gmail.com"},]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.139.0",
+]
+
+[dependency-groups]
+dev = [
+    "httpx>=0.28.1",
+    "pytest>=9.1.1",
+]
+
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
